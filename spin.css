@@ -1,0 +1,99 @@
+#spin1 {
+	width:100%;
+	height:100%;
+	top:0;
+	left:0;
+}
+body {
+	margin: 0;
+	font-family: arial;
+	overflow:hidden;
+	background-color:black;
+}
+#content {
+	opacity: 0.9;
+	background-color:brown;
+	z-index: 100000000;
+	width:100%;
+	margin:0 auto;
+	padding: 20px;
+	text-align:center;
+	margin-top:100px;
+	padding-top:80px;
+	color:white;
+
+	background: #a90329; /* Old browsers */
+background: -moz-linear-gradient(top,  #a90329 0%, #8f0222 44%, #6d0019 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#a90329), color-stop(44%,#8f0222), color-stop(100%,#6d0019)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  #a90329 0%,#8f0222 44%,#6d0019 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  #a90329 0%,#8f0222 44%,#6d0019 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  #a90329 0%,#8f0222 44%,#6d0019 100%); /* IE10+ */
+background: linear-gradient(top,  #a90329 0%,#8f0222 44%,#6d0019 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a90329', endColorstr='#6d0019',GradientType=0 ); /* IE6-9 */
+
+	border-top: 3px solid white;
+	border-bottom: 3px solid white;
+
+}
+#content div {
+	opacity: 1;
+}
+h1, h2 {
+	background-color:black;
+	color:white;
+	width:400px;
+	padding:10px;
+	font-family: Arial;
+	border:2px solid white;
+}
+h1 {
+	position: relative;
+	top:-130px;
+	left:0;
+	float: left;
+	margin:0;
+	display:inline;
+}
+h2 {
+	float:right;
+	margin-right:40px;
+	text-align:left;
+	position:relative;
+	top:115px;
+}
+h2 small {
+	float:right;
+	position:relative;
+	top:20px;
+	right:0px;
+	background-color:black;
+	padding:5px;
+	border:2px solid white;
+}
+p.stupid {
+	width:100%;
+	position: absolute;
+	text-align:center;
+	margin:0 auto;
+	font-size: 4em;
+	text-shadow: 2px 2px #ff0000;
+}
+
+#contact {
+	text-align:left;
+	position: fixed;
+	bottom: 0;
+	left: 20px;
+	height:auto;
+	width:400px;
+	background: black;
+	border: 2px solid white;
+	border-bottom: 0;
+	color:white;
+	padding:10px;
+	padding-left:20px;
+	padding-right:20px;
+}
+a, a:visited {
+	color:green;
+}

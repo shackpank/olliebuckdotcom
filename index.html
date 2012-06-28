@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>ollie buck dot com</title>
+		<script src="./spin.js"></script>
+		<script src="./_.js"></script>
+		<link rel="stylesheet" href="./spin.css" />
+	</head>
+	<body>
+
+			<div id="content" >
+				<h1>OLLIEBUCK<small>.DOT.COM</small></h1>
+				<p class="stupid">
+					<!-- new host, more spinners! -->
+					<!-- washing machine noises -->
+					<!-- like that red dwarf shot -->
+					spin.js was not designed for this
+				</p>
+				<h2>
+					I will put a proper website here soon           
+					<small>
+						when it's done
+					</small>
+				</h2>
+				<div style="clear:both;"></div>
+			</div>
+
+		<div id="spin1">
+		<div id="spin2">
+		<div id="spin3">
+		<div id="spin5">
+		<div id="spin7">
+		<div id="spin9">
+		<div id="spin11">
+		<div id="spin13">
+		<div id="spin15">
+		<div id="spin17">
+		</div>
+		</div>
+		</div>
+		</div>
+		</div>
+		</div>
+		</div>
+		</div>
+		</div>
+		</div>
+
+		<div id="contact">
+			 <p>
+			 	<strong>Hi!</strong> This is the perpetually unfinished website of <a href="mailto:newsite@olliebuck.com">Ollie Buck</a>, currently a Senior Web Developer at <a href="http://holidayextras.com">Holiday Extras</a> (we are <a href="http://join.holidayextras.co.uk/"> recruiting!</a>)
+			 </p>
+			 <p>
+			 	I like <a href="http://ruby-lang.org">Ruby</a>/<a href="http://rubyonrails.org/">Rails</a>, <a href="http://coffeescript.org/">Coffeescript</a>, and <a href="http://nodejs.org/">Node.JS</a>/Javascript; <a href="http://python.org">Python</a> is nice as well, I'm also Zend Certified in <a href="http://php.net/">PHP</a> 5.3, PHP is okay-ish I guess. Barely.
+			 </P>
+			 <p>
+			 	I'm on <a href="http://twitter.com/shackpank/">Twitter</a> (mostly but not entirely complaining about things); and <a href="https://github.com/shackpank">Github</a>
+			 </p>
+		</div>
+	</body>
+	<script>
+		var baseLines = 20
+		var baseLength = 40
+		var baseWidth = 40
+		var baseRadius = 100
+
+		var spinnerOpts = function(multiplier) {
+			multiplier = multiplier / 2
+			var opts = {
+				lines: baseLines * multiplier,
+				length: baseLength * (multiplier/4),
+				width: baseWidth * (multiplier/6),
+				radius: baseRadius * multiplier,
+				rotate: 0,
+				color: '#fff',
+				speed: 1,
+				trail: 60,
+				shadow: false,
+				hwaccel: false,
+				className: 'spinner',
+				zIndex: -10
+			}
+			console.log(opts);
+			return opts;
+		}
+		//var i = 1;
+		for(var i = 1; i < 20; i += 1) {
+			var target = document.getElementById('spin' + i);
+			var spinner = new Spinner(spinnerOpts(i)).spin(target)
+			//throw 'one'
+		}
+
+	</script>
+</html>
